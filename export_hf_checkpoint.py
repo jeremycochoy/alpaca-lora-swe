@@ -6,6 +6,7 @@ from peft import PeftModel
 from transformers import LlamaForCausalLM, LlamaTokenizer  # noqa: F402
 
 BASE_MODEL = os.environ.get("BASE_MODEL", None)
+LORA_MODEL = os.environ.get("LORA_MODEL", None)
 assert (
     BASE_MODEL
 ), "Please specify a value for BASE_MODEL environment variable, e.g. `export BASE_MODEL=huggyllama/llama-7b`"  # noqa: E501
@@ -24,7 +25,7 @@ first_weight_old = first_weight.clone()
 
 lora_model = PeftModel.from_pretrained(
     base_model,
-    "tloen/alpaca-lora-7b",
+    LORA_MODEL,
     device_map={"": "cpu"},
     torch_dtype=torch.float16,
 )
