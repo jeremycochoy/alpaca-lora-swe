@@ -1,4 +1,6 @@
-# 🦙🌲🤏 Alpaca-LoRA
+# 🦙🌲🤏 Alpaca-LoRA-Swe based on Alpaca-Lora
+
+# Original Alpaca-Lora readme bellow:
 
 - 🤗 **Try the pretrained model out [here](https://huggingface.co/spaces/tloen/alpaca-lora), courtesy of a GPU grant from Huggingface!**
 - Users have created a Discord server for discussion and support [here](https://discord.gg/prbq284xX5)
